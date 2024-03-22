@@ -68,8 +68,8 @@ def undoom(dice_a, dice_b, t=0):
 dice_A = [1, 2, 3, 4, 5, 6]
 dice_B = [1, 2, 3, 4, 5, 6]
 s = len(dice_A) * len(dice_B)
-print("\t\t Part-A:")
-print("Total combinations = Sum of possibilities of A X B = ", s , "\n")
+print("\n\t\t Part-A:")
+print("Total combinations = Sum of possibilities of A X B = {} X {} = {}".format(len(dice_A),len(dice_B),s) , "\n")
 printdice(dice_A,dice_B)
 posi = posibilities(dice_A,dice_B)
 for i in posi.keys():
