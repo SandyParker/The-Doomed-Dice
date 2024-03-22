@@ -30,7 +30,7 @@ def posibilities(A, B):
     return p
 
 
-def undoom(dice_a, dice_b, t=0):
+def undoom_dice(dice_a, dice_b, t=0):
     A = list(dice_a)
     B = list(dice_b)
     for i in range(len(A)):
@@ -62,7 +62,7 @@ def undoom(dice_a, dice_b, t=0):
                             break
             if changed:
                 break
-        undoom(A, B)
+        undoom_dice(A, B)
 
 
 dice_A = [1, 2, 3, 4, 5, 6]
@@ -75,4 +75,4 @@ posi = posibilities(dice_A,dice_B)
 for i in posi.keys():
     print("Probability of Sum {} = {}/{} = {}".format(i, posi[i], s, posi[i] / s))
 print("\n\t\tPart-B:")
-undoom(dice_A, dice_B)
+undoom_dice(dice_A, dice_B)
