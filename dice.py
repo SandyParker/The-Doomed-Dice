@@ -1,10 +1,10 @@
 def prob(a, A, B):
-    occurence = 0
+    occurrence = 0
     for i in A:
         for j in B:
             if a == i + j:
-                occurence += 1
-    return occurence
+                occurrence += 1
+    return occurrence
 
 
 def printdice(A, B):
